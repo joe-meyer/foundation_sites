@@ -1,0 +1,38 @@
+//
+// concrete5 user interface
+//
+
+a.ccm-panel-add-block-draggable-block-type img {
+    margin-top: 20px;
+}
+
+#ccm-menu-highlighter, 
+#ccm-menu-click-proxy {
+    margin-top: -49px;
+}
+
+#ccm-popover-menu-container {
+    
+    .ccm-edit-mode-block-menu,
+    .popover {
+        margin-top: -40px;
+    }
+}
+
+#ccm-inline-toolbar-container {
+    
+    .ccm-inline-toolbar {
+        
+        margin-top: -40px;
+        
+        .ccm-inline-toolbar-button {
+            button {
+                margin: 0;
+            }
+        }
+    }
+    
+    .ccm-inline-toolbar-affixed {
+            margin-top: 0px;
+    }
+}

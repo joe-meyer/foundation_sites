@@ -1,0 +1,10 @@
+// Allows the use of foundation rem-calc() or lower-bound() in your settings
+@import "foundation/functions";
+
+//
+// Own styles
+//
+
+.top-bar .title-area h1 {
+    font-size: 1.75rem;
+}

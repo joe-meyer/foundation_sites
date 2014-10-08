@@ -1,0 +1,60 @@
+//
+// Foundation
+//
+
+// THIS BUILDS THE OVERALL STYLE
+@import "settings";
+@import "normalize";
+
+// this compontents don't work when scoping foundation css
+// we import the unscoped
+@import "foundation/components/top-bar";
+@import "foundation/components/offcanvas";
+
+// scope this styles to fndtn class!
+.ccm-page .fndtn {
+
+    //  EITHER import all the foundation features
+    //  @import "foundation";
+
+    //  OR selectively include components. We do this to reduce the file size of main.css
+    @import "foundation/components/global";
+    //  @import "foundation/components/accordion";
+    @import "foundation/components/alert-boxes";
+    @import "foundation/components/block-grid";
+    @import "foundation/components/breadcrumbs";
+    //  @import "foundation/components/button-groups";
+    @import "foundation/components/buttons";
+    @import "foundation/components/clearing";
+    @import "foundation/components/dropdown";
+    //  @import "foundation/components/dropdown-buttons";
+    @import "foundation/components/flex-video";
+    @import "foundation/components/forms";
+    @import "foundation/components/grid";
+    //  @import "foundation/components/inline-lists";
+    //  @import "foundation/components/joyride";
+    //  @import "foundation/components/keystrokes";
+    //  @import "foundation/components/labels";
+    //  @import "foundation/components/magellan";
+    @import "foundation/components/orbit";
+    //  @import "foundation/components/pagination";
+    //  @import "foundation/components/panels";
+    //  @import "foundation/components/pricing-tables";
+    //  @import "foundation/components/progress-bars";
+    //  @import "foundation/components/reveal";
+    @import "foundation/components/side-nav";
+    //  @import "foundation/components/split-buttons";
+    //  @import "foundation/components/switch";
+    @import "foundation/components/tables";
+    //  @import "foundation/components/tabs";
+    @import "foundation/components/thumbs";
+    //  @import "foundation/components/tooltips";
+    @import "foundation/components/type";
+    @import "foundation/components/visibility";
+
+    //  PLUS Custom Styles
+    @import "custom";
+
+}
+
+@import "concrete5-ui";
