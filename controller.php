@@ -1,6 +1,7 @@
 <?php
 namespace Concrete\Package\FoundationSites;
 
+use BlockType;
 use Package;
 use PageTheme;
 
@@ -21,7 +22,7 @@ class Controller extends Package
     public function install() {
         $pkg = parent::install();
         $this->installThemes($pkg);
-        //$this->installBlocks($pkg);
+        $this->installBlocks($pkg);
 
     }
 
@@ -29,9 +30,14 @@ class Controller extends Package
         PageTheme::add('foundation_sites', $pkg);
     }
 
-    // private function installBlocks($pkg) {
-    //     if (!BlockType::getByHandle('clearing_lightbox')) {
-    //         BlockType::installBlockTypeFromPackage('clearing_lightbox', $pkg);
-    //     }
-    // }
+    private function installBlocks($pkg) {
+        
+        if (!BlockType::getByHandle('v_card')) {
+            BlockType::installBlockTypeFromPackage('v_card', $pkg);
+        }
+
+        // if (!BlockType::getByHandle('clearing_lightbox')) {
+        //     BlockType::installBlockTypeFromPackage('clearing_lightbox', $pkg);
+        // }
+    }
 }

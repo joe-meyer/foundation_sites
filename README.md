@@ -1,11 +1,9 @@
 # concrete5.7. package with Foundation for Sites frontend
 
-## TODO
-- make the clearing_lightbox block working (branch 'clearing')
-
 ## What you get:
 A concrete 5 package ready to install containing
 
+    *   V-Card block
 	*	Templates for the autonav block (core)
 		- breadcrumbs 
 		- list without bullets
@@ -22,8 +20,14 @@ A concrete 5 package ready to install containing
 
 	*  'Description' for showing captions
 
+## TODO
+- make the clearing_lightbox block working (branch 'clearing')
+
 ### Before you install the package
 In the folder packages/foundation_sites/themes/foundation_sites execute a `bower install` and then `compass compile` (or simply `gulp` if you installed it) to get the needed assets and generate the main.css file.
+
+#### License
+This package is licensed under the terms of the MIT license.
 
 #### Recommended tools
 
@@ -33,6 +37,3 @@ In the folder packages/foundation_sites/themes/foundation_sites execute a `bower
   * [compass](http://compass-style.org/): `gem install compass-sourcemaps --pre`
   * [bower](http://bower.io): `npm install -g bower grunt-cli`
   * [gulp.js](http://gulpjs.com/)
-
-
-
