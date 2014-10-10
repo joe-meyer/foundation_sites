@@ -1,4 +1,4 @@
-# concrete5.7. package with Foundation for Sites frontend
+# concrete5.7 package with Foundation for Sites frontend
 
 ## What you get:
 A concrete 5 package ready to install containing
@@ -22,6 +22,7 @@ A concrete 5 package ready to install containing
 
 ## TODO
 - make the clearing_lightbox block working (branch 'clearing')
+- is_featured attribute for files (optional for clearing lightbox)
 
 ### Before you install the package
 In the folder packages/foundation_sites/themes/foundation_sites execute a `bower install` and then `compass compile` (or simply `gulp` if you installed it) to get the needed assets and generate the main.css file.

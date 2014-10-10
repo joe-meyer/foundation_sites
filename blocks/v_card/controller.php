@@ -2,9 +2,6 @@
 namespace Concrete\Package\FoundationSites\Block\VCard;
 
 use \Concrete\Core\Block\BlockController;
-use Loader;
-use Page;
-use View;
 
 class Controller extends BlockController {
     

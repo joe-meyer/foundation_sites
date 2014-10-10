@@ -2,8 +2,8 @@
 
 <div class="form-group">
 
-	<?php echo $form->label('fullName', 'Full Name:'); ?>
-	<?php echo $form->text('fullName', $fullName); ?>
+    <?php echo $form->label('fullName', 'Full Name:'); ?>
+    <?php echo $form->text('fullName', $fullName); ?>
 
     <?php echo $form->label('streetAdress', 'Street:'); ?>
     <?php echo $form->text('streetAdress', $streetAdress); ?>
