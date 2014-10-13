@@ -22,10 +22,15 @@ A concrete 5 package ready to install containing
 
 ## TODO
 - make the clearing_lightbox block working (branch 'clearing')
-- is_featured attribute for files (optional for clearing lightbox)
+- install is_featured attribute for files (optional for clearing lightbox)
+- gulp browser-sync is broken
 
-### Before you install the package
-In the folder packages/foundation_sites/themes/foundation_sites execute a `bower install` and then `compass compile` (or simply `gulp` if you installed it) to get the needed assets and generate the main.css file.
+### Working with the package
+- In packages/foundation_sites/themes/foundation_sites execute `bower install` 
+- execute `bundle` (only once)
+- compile the stylesheet with `bundle exec compass watch`
+
+[Foundation docs](http://foundation.zurb.com/docs/sass.html)
 
 #### License
 This package is licensed under the terms of the MIT license.
@@ -38,3 +43,4 @@ This package is licensed under the terms of the MIT license.
   * [compass](http://compass-style.org/): `gem install compass-sourcemaps --pre`
   * [bower](http://bower.io): `npm install -g bower grunt-cli`
   * [gulp.js](http://gulpjs.com/)
+  * [bundler](http://bundler.io/)

@@ -1,19 +1,20 @@
 'use strict';
 
 // include gulp & tools
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+var gulp        = require('gulp');
+var $           = require('gulp-load-plugins')();
+var del         = require('del');
 var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var reload      = browserSync.reload;
 
 
 // default task
 gulp.task('default', ['bs']);
 
 // delete some files
-gulp.task('clean', function() {
-  return gulp.src('css/**/*.css', { read: false }) // much faster
-    .pipe($.rimraf());
+gulp.task('clean', function(cb) {
+  // You can use multiple globbing patterns as you would with `gulp.src`
+  del(['css'], cb);
 });
 
 // DEVELOPMENT TASK: compile sass files expanded
