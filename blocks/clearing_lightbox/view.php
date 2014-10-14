@@ -1,24 +1,22 @@
+<?php defined('C5_EXECUTE') or die('Access Denied.'); ?>
+
 <ul class="clearing-thumbs" data-clearing>  
-  
 <?php 
-defined('C5_EXECUTE') or die('Access Denied.');
+foreach($files as $file) {
+    $f = $file->getApprovedVersion();
+    $filePath  = $f->getRelativePath();
+    
+    // $t = new Thumbnail($f);
+    // $thumbnail = $t-getPath();
 
-foreach($images as $imgInfo) {
-    $f = File::getByID($imgInfo['fID']);
-    $fp = new Permissions($f);
-    if ($fp->canRead()) {
+    // $thumbnail = $f->getThumbnail(2, false);
 
-        $fileName = $f->getFileName();
-        $picturePath  = $f->getRelativePath();
-        $thumbnail = $f->getThumbnail(2, false);
-
-        echo "<li>";
-        echo "<a class=\"th\" href=\"{$picturePath}\">";
-        echo "<img src=\"{$thumbnail}\"/>";
-        echo "</a>";
-        echo "</li>\n";
-    }
+    echo "<li>";
+    echo "<a class=\"th\" href=\"{$filePath}\" >";
+    echo "Link";
+    //echo "<img src=\"{$thumbnail}\"/>";
+    echo "</a>";
+    echo "</li>\n";
 }
 ?>
-
 </ul>
