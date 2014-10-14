@@ -6,7 +6,6 @@ use FileSet;
 use FileList;
 use Concrete\Core\File\Type\Type;
 use \Concrete\Core\File\Image\Thumbnail\Thumbnail;
-use Permissions;
 
 class Controller extends BlockController
 {
