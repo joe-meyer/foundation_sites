@@ -4,6 +4,7 @@ namespace Concrete\Package\FoundationSites;
 use Package;
 use PageTheme;
 use BlockType;
+use \Concrete\Core\File\Image\Thumbnail\Type\Type;
 
 class Controller extends Package
 { 
@@ -23,6 +24,7 @@ class Controller extends Package
         $pkg = parent::install();
         $this->installThemes($pkg);
         $this->installBlocks($pkg);
+        $this->installThumbnailType($pkg);
 
     }
 
@@ -34,5 +36,14 @@ class Controller extends Package
         if (!BlockType::getByHandle('clearing_lightbox')) {
             BlockType::installBlockTypeFromPackage('clearing_lightbox', $pkg);
         }
+    }
+
+    private function installThumbnailType($pkg) {
+        $type = new Type();
+        $type->setHeight(180);
+        $type->setWidth(180);
+        $type->setName('Clearing Lightbox');
+        $type->setHandle('clearing_lightbox');
+        $type->save();
     }
 }
