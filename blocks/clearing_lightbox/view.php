@@ -8,7 +8,7 @@ foreach($files as $f) {
 
     echo "<li>";
     echo "<a class=\"th\" href=\"$filePath\" >";
-    echo $f->getListingThumbnailImage()";
+    echo $f->getListingThumbnailImage();
     //echo "Link";
     echo "</a>";
     echo "</li>\n";
